@@ -6,6 +6,8 @@ This dataset is created for prediction of Graduate Admissions from an Indian per
 Here analysis is done pandas to understand variuos parameter that affect to student to get student admission
 The Code is written in Python 3.6.5 . If you don't have Python installed you can find it here. If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip.
 
+# Installations
+
 To install pip run in the command Line
 
 python -m ensurepip -- default-pip
@@ -34,6 +36,11 @@ git clone https://github.com/mudigosa/DataScience-Blog/
 
 then in the command Line type, after you have downloaded jupyter notebook type
 
+Linear Regrssion
+Scikit-learn is a powerful Python module for machine learning. Just import the library and start using model from it. 
+
+import scikit-learn
+
 jupyter notebook
 locate the notebook and run it. Command Line Application
 
@@ -46,14 +53,14 @@ Train a new network on a data set with train.py
         Set hyperparameters: python train.py data_dir --learning_rate 0.001 --hidden_layer1 120 --epochs 20
         Use GPU for training: python train.py data_dir --gpu gpu
 
-Predict flower name from an image with predict.py along with the probability of that name. That is you'll pass in a single image /path/to/image and return the flower name and class probability
+Predict students who will get admissions from an csv with predict.py along with the probability of that name. That is you'll pass in a single image /path/to/image and return the flower name and class probability
     Basic usage: python predict.py /path/to/image checkpoint
     Options:
         Return top K most likely classes: python predict.py input checkpoint ---top_k 3
         Use a mapping of categories to real names: python predict.py input checkpoint --category_names cat_To_name.json
         Use GPU for inference: python predict.py input checkpoint --gpu
 
-CSV file
+# Data File - CSV file
 
 In order for the network to print out the graduate student admission data  a .csv file is required. By using a .csv file the data can be sorted into folders with numbers and those numbers will correspond to specific names specified in the .json file. Data and the json file
 
@@ -88,4 +95,4 @@ The checkpoint.pth file contains the information of a network trained to recogni
 
 Please read CONTRIBUTING.md for the process for submitting pull requests. Authors
 
-Shanmukha Mudigonda - Initial work Udacity - Final Project of the AI with Python Nanodegree
+Shanmukha Mudigonda - Initial work Udacity -  Project of the Data Science with Python Nanodegree
