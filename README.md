@@ -66,7 +66,7 @@ In order for the network to print out the graduate student admission data  a .cs
 
 The data used specifically for this assignemnt are a graduate student admission criteria database are not provided in the repository as it's larger than what github allows. Nevertheless, feel free to create your own databases and train the model on them to use with your own projects. The structure of your data should be the following: The data need to comprised of 3 folders, test, train and validate. Generally the proportions should be 70% training 10% validate and 20% test. Inside the train, test and validate folders there should be folders bearing a specific number which corresponds to a specific category, clarified in the json file. For example if we have the image a.jpj and it is a rose it could be in a path like this /test/5/a.jpg and json file would be like this {...5:"rose",...}. Make sure to include a lot of photos of your catagories (more than 10) with different angles and different lighting conditions in order for the network to generalize better. GPU
 
-As the network makes use of a sophisticated deep convolutional neural network the training process is impossible to be done by a common laptop. In order to train your models to your local machine you have three options
+# Data Analytics using linear Regression Model
 
 Cuda -- If you have an NVIDIA GPU then you can install CUDA from here. With Cuda you will be able to train your model however the process will still be time consuming
 Cloud Services -- There are many paid cloud services that let you train your models like AWS or Google Cloud
