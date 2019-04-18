@@ -60,11 +60,14 @@ Predict students who will get admissions from an csv with predict.py along with 
         Use a mapping of categories to real names: python predict.py input checkpoint --category_names cat_To_name.json
         Use GPU for inference: python predict.py input checkpoint --gpu
 
-# Data File - CSV file
+# Data File - Admission Predict CSV file
 
 In order for the network to print out the graduate student admission data  a .csv file is required. By using a .csv file the data can be sorted into folders with numbers and those numbers will correspond to specific names specified in the .json file. Data and the json file
 
 The data used specifically for this assignemnt are a graduate student admission criteria database are not provided in the repository as it's larger than what github allows. Nevertheless, feel free to create your own databases and train the model on them to use with your own projects. The structure of your data should be the following: The data need to comprised of 3 folders, test, train and validate. Generally the proportions should be 70% training 10% validate and 20% test. Inside the train, test and validate folders there should be folders bearing a specific number which corresponds to a specific category, clarified in the json file. For example if we have the image a.jpj and it is a rose it could be in a path like this /test/5/a.jpg and json file would be like this {...5:"rose",...}. Make sure to include a lot of photos of your catagories (more than 10) with different angles and different lighting conditions in order for the network to generalize better. GPU
+
+# Admission Blog Post IPython Notebook
+It has all the pandas code written to analyse the Admission Predict CSV File, visualize results(BAR Charts,Heat Map) and evaluate them.
 
 # Data Analytics using linear Regression Model
 
